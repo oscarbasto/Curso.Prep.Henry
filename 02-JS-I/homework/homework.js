@@ -84,7 +84,12 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if(str1==str2){
+    return true;
+
+  }else{
+    return false;
+  }
   
 
 }
@@ -93,19 +98,36 @@ function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if(num>90){
+    return true;
+
+  }else{
+    return false;
+  }
+
 }
 
 function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if(num>50){    //si numero es mayor que 50 return true  
+    return true;
+
+  }else{         //si no retorne false
+    return false;
+  }
 }
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
+
+  // Para sacar el resto de la division se toma el signo %. 
+
+  var resto = x%y;
+
+  return resto;
   
 }
 
@@ -113,6 +135,18 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
+
+
+  if(num%2==0)  // si al dividir  num entre 2 y el resto de esa division es igual a 0 es PAR
+                //si no es imparr
+  {
+    return true;
+    
+  }else{
+    return false;    
+      }
+    
+
   
 }
 
@@ -120,26 +154,39 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if(num%2==0){
+     return false;
+  }else{
+    return true;
+  }
 }
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
+  var numeroc = num ** 2;   // la funciona para elevar numero al cuadrado es Math.pow(base,exponente);
+                            // pero lo podemos sustituir por el num ** exponente.
+  return numeroc;
   
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
+  var numeroc = num ** 3;   
+
+return numeroc;
+
   
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  
+  var numeroe = Math.pow(num,exponent);
+
+  return numeroe;
 }
 
 function redondearNumero(num) {
