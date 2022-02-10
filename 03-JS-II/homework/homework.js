@@ -117,7 +117,7 @@ function estaEnRango(numero) {
   if(numero<50 && numero>20){
     return true;
   } else{
-    return false; // holi
+    return false;
   }
 }
 
